@@ -3,13 +3,34 @@
   <head>
     <style>
       .title {
+        font-family: sans-serif;
         text-align: center;
         color: rgb(234, 213, 71);
+        
       }
       .button {
+       background-color: rgb(234, 213, 71); /* Green */
+    border: none;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      }
+      .text {
         text-align: center;
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
+        font-family: monospace;
+        font-weight: bold;
+      }
+      .heading {
+        text-align: center;
+        font-family: sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        color: rgb(234, 213, 71);
       }
       ul {
         list-style-type: none;
@@ -18,9 +39,6 @@
         padding: 0;
         overflow: hidden;
         background color: rgb(255, 255, 255);
-      }
-      h1 {
-        font-family: Tamaha;
       }
       li {
        float: left; 
@@ -41,17 +59,17 @@
   </head>
   <body>
         <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="softwareengineering.html">Software Engineering</a></li>
-  <li><a href="filmmaking.html">Filmmaking</a></li>
-  <li><a href="contact.html">Contact Me!</a></li>
+  <li><a class="text" href="index.html">Home</a></li>
+  <li><a class="text" href="softwareengineering.html">Software Engineering</a></li>
+  <li><a class="text" href="filmmaking.html">Filmmaking</a></li>
+  <li><a class="text" href="contact.html">Contact Me!</a></li>
 </ul>
     <h1 class="title">Welcome to My Portfolio!</h1>
-    <p>My name is Majesty Uwagerikpe, and I am a sophomore at the University of Pennsylvania.
+    <p class="text">My name is Majesty Uwagerikpe, and I am a sophomore at the University of Pennsylvania.
       I study Computer Science, and my interests include software engineering, entrepreneurship, and filmmaking.
     </p>
     <br>
-    <h2 style="color: rgb(234, 213, 71);">What brings you here today?</h2>
+    <h2 class="heading">What brings you here today?</h2>
     <a href="softwareengineering.html"><button class="button">Software Engineering</button></a>
     <a href="filmmaking.html"><button class="button">Filmmaking</button></a>
   </body>
