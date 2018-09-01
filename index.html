@@ -17,13 +17,37 @@
     font-weight: bold;
     padding: 15px 32px;
     text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
       }
-      .button:hover {
-        background-color: rgb(244, 66, 229);
-      }
+      .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
       .text {
         text-align: center;
         color: white;
