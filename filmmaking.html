@@ -45,6 +45,19 @@
   opacity: 1;
   right: 0;
 }
+      .parallax {
+    /* The image used */
+    background-image: url("HTMLCodeEdited2.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
       .text {
         text-align: center;
         color: white;
@@ -115,6 +128,12 @@
     <br>
     <img src="WhyIDoItTagEnd.png" width="125px" height=auto alt="Why End">
     <br>
+    <div class="parallax"></div>
+    <div style="height:1000px;background-color:red;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
     <h2 class="heading">What brings you here today?</h2>
     <div>
     <a href="softwareengineering.html"><button class="button" style="vertical-align:middle"><span>Software Engineering</span></button></a>
