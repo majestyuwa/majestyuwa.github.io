@@ -1,7 +1,78 @@
-<!DOCTYPE HMTL>
+<!DOCTYPE HTML>
 <html>
-  <style>
-    ul {
+  <head>
+    <style>
+      .title {
+        font-family: sans-serif;
+        font-size: 50px;
+        text-align: center;
+        color: rgb(234, 213, 71);
+        
+      }
+      .button {
+       background-color: rgb(234, 213, 71);
+    border: solid;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      }
+      .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+      .text {
+        text-align: center;
+        color: white;
+        font-family: monospace;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .navBarText {
+        text-align: center;
+        color: white;
+        font-family: monospace;
+        font-weight: bold; 
+      }
+      .heading {
+        text-align: center;
+        font-family: sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: 40px;
+        color: rgb(234, 213, 71);
+      }
+      body {
+    background-image:    url(HTMLCodeEdited2.jpg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   repeat;
+    background-position: center center;              /* optional, center the image */
+      }
+      ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -22,21 +93,32 @@
       li a:hover {
         background-color: rgb(234, 213, 71);
       }
-  </style>
-  <head>
+    </style>
     <title>Majesty Uwagerikpe</title>
     <link rel="shortcut icon" href="nexo headshot-18.jpg"/>
   </head>
   <body>
-     <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="softwareengineering.html">Software Engineering</a></li>
-  <li><a href="filmmaking.html">Filmmaking</a></li>
-  <li><a href="contact.html">Contact Me!</a></li>
+        <ul>
+  <li><a class="navBarText" href="index.html">Home</a></li>
+  <li><a class="navBarText" href="softwareengineering.html">Software Engineering</a></li>
+  <li><a class="navBarText" href="filmmaking.html">Filmmaking</a></li>
+  <li><a class="navBarText" href="contact.html">Contact Me!</a></li>
 </ul>
-    <h1 color="rgb(234, 213, 71)>Check out some of my film work!</h1>
-    <p>Film has become a huge part of my life. It lets me express my creative and artistry. 
-      I have experience as an assisant director and a boom director, but most of my work has
-      been in screenwriting.</p>
+    <h1 class="title">Filmmaking</h1>
+    <br>
+    <img src="BioBeg.png" width="100px" height=auto alt="Bio Start">
+    <p class="text">
+    Film has been a part of my life for several years. Film allows me to express myself and my views on the world in a way
+      that is universally relatable. Most of my film experience has been in screenwriting, but I also have experience as an
+      assistant director and boom operator. Check out some of my film work below!
+    </p>
+    <br>
+    <img src="BioEnd.png" width="100px" height=auto alt=Bio End">
+    <br>
+    <h2 class="heading">What brings you here today?</h2>
+    <div>
+    <a href="softwareengineering.html"><button class="button" style="vertical-align:middle"><span>Software Engineering</span></button></a>
+    <a href="filmmaking.html"><button class="button" style="vertical-align:middle"><span>Filmmaking</span></button></a>
+    </div>
   </body>
 </html>
