@@ -2,17 +2,78 @@
 <html>
   <head>
     <style>
-      body {
-       font-family: 'Bungee'; 
-      }
       .title {
+        font-family: sans-serif;
+        font-size: 50px;
         text-align: center;
         color: rgb(234, 213, 71);
+        
       }
       .button {
+       background-color: rgb(234, 213, 71);
+    border: solid;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      }
+      .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+      .text {
         text-align: center;
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
+        color: white;
+        font-family: monospace;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .navBarText {
+        text-align: center;
+        color: white;
+        font-family: monospace;
+        font-weight: bold; 
+      }
+      .heading {
+        text-align: center;
+        font-family: sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: 40px;
+        color: rgb(234, 213, 71);
+      }
+      body {
+    background-image:    url(HTMLCodeEdited2.jpg);
+    background-size:     cover;                      
+    background-repeat:   repeat;
+    background-position: center center;              
       }
       ul {
         list-style-type: none;
@@ -41,14 +102,25 @@
   </head>
   <body>
         <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="softwareengineering.html">Software Engineering</a></li>
-  <li><a href="filmmaking.html">Filmmaking</a></li>
-  <li><a href="contact.html">Contact Me!</a></li>
+  <li><a class="navBarText" href="index.html">Home</a></li>
+  <li><a class="navBarText" href="softwareengineering.html">Software Engineering</a></li>
+  <li><a class="navBarText" href="filmmaking.html">Filmmaking</a></li>
+  <li><a class="navBarText" href="contact.html">Contact Me!</a></li>
 </ul>
-    <h1 class="title">Thanks for stopping by!</h1>
-    <p>I hope you were able to learn a little more about me! There are various ways to reach out to me, and they're all
-      listed below.
+    <h1 class="title">Thanks for Stopping By</h1>
+    <br>
+    <img src="BioBeg.png" width="100px" height=auto alt="Bio Start">
+    <p class="text"> I hope that you have learned more about me, what I've done, and my goals. Feel free to check out my
+      <u>resume</u>, send an <u>email</u>, or connect with me on <u>LinkedIn</u>.
     </p>
+    <br>
+    <img src="BioEnd.png" width="100px" height=auto alt=Bio End">
+    <br>
+    <h2 class="heading">What brings you here today?</h2>
+    <div>
+    <a href="softwareengineering.html"><button class="button" style="vertical-align:middle"><span>Software Engineering</span></button></a>
+    <a href="filmmaking.html"><button class="button" style="vertical-align:middle"><span>Filmmaking</span></button></a>
+    </div>
   </body>
 </html>
+
